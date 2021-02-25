@@ -1,10 +1,10 @@
-FROM golang:1.12-alpine AS build 
+FROM golang:1.12-alpine AS build
 ENV GO111MODULE on
 ENV CGO_ENABLED 0
 
 RUN apk add git make openssl
 
-WORKDIR /go/src/github.com/alex-leonhardt/k8s-mutate-webhook
+WORKDIR /go/src/github.com/dustinroose/mutate-runAsUser
 ADD . .
 RUN make test
 RUN make app
