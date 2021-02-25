@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	m "github.com/dustinroose/mutate-runAsUser/pkg/mutate"
+	m "github.com/dustinroose/mutate-runasuser/pkg/mutate"
 )
 
 func handleRoot(w http.ResponseWriter, r *http.Request) {

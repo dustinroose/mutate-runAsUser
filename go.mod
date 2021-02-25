@@ -1,4 +1,4 @@
-module github.com/alex-leonhardt/k8s-mutate-webhook
+module github.com/dustinroose/mutate-runasuser
 
 go 1.12
 
